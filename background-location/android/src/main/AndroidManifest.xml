@@ -1,5 +1,5 @@
 
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.trip2.backgroundlocation">
+      package="com.trip2.bglocation.backgroundlocation">
   </manifest>
   

@@ -1,7 +1,7 @@
 {
   "name": "background-location",
   "version": "0.0.1",
-  "description": "T2BackgroundLocation",
+  "description": "BackgroundLocation",
   "main": "dist/plugin.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
@@ -56,9 +56,9 @@
   "swiftlint": "@ionic/swiftlint-config",
   "repository": {
     "type": "git",
-    "url": "git clone https://hclaro@bitbucket.org/tacms_front/background-location.git"
+    "url": "https://hclaro@bitbucket.org/tacms_front/background-location.git"
   },
   "bugs": {
-    "url": "git clone https://hclaro@bitbucket.org/tacms_front/background-location.git/issues"
+    "url": "https://hclaro@bitbucket.org/tacms_front/background-location.git/issues"
   }
 }

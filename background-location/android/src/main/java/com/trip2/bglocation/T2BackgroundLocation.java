@@ -1,4 +1,4 @@
-package com.trip2;
+package com.trip2.bglocation;
 
 import com.getcapacitor.JSObject;
 import com.getcapacitor.NativePlugin;
