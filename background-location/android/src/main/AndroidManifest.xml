@@ -1,5 +1,22 @@
 
   <manifest xmlns:android="http://schemas.android.com/apk/res/android"
       package="com.trip2.bglocation.backgroundlocation">
+
+      <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+      <uses-permission android:name="android.permission.INTERNET"/>
+      <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+      <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+      <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+      <application>
+          <service
+              android:name="com.trip2.bglocation.services.TrackerService"
+              android:enabled="true"
+              android:exported="true">
+
+          </service>
+      </application>
   </manifest>
   
