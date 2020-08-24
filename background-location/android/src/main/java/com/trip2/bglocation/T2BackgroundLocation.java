@@ -74,7 +74,7 @@ public class T2BackgroundLocation extends Plugin implements GoogleApiClient.Conn
     private static final int REQUEST_LOCATION = 1;
     private static final int REQUEST_CHECK_SETTINGS = 2;
 
-    private static final long UPDATE_INTERVAL = 5000;
+    private static long UPDATE_INTERVAL = 5000;
     private static final long UPDATE_FASTEST_INTERVAL = UPDATE_INTERVAL / 2;
 
 //    @PluginMethod
@@ -115,8 +115,12 @@ public class T2BackgroundLocation extends Plugin implements GoogleApiClient.Conn
         sessionData.setSocketUrl(call.getString("socket_url"));
         sessionData.setEventNewPosition(call.getString("event_new_position"));
         sessionData.setToken(call.getString("token"));
-
         preferences.save(sessionData);
+        UPDATE_INTERVAL = call.getInt("update_interval");
+
+
+        Log.d(CLASS_NAME, "update_interval");
+        Log.i(CLASS_NAME, Integer.toString(call.getInt("update_interval")));
 
         if (networkStatus()) {
             if (timer == null) {
